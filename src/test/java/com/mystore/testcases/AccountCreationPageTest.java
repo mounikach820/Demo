@@ -53,6 +53,7 @@ public class AccountCreationPageTest extends BaseClass {
 		boolean result=acountCreationPage.validateAcountCreatePage();
 		Assert.assertFalse(result);
 		Log.endTestCase("verifyCreateAccountPageTest");
+		System.out.println("1234");
 	}
 	
 

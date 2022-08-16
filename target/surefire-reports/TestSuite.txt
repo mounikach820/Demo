@@ -1,0 +1,93 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 7, Errors: 0, Skipped: 0, Time elapsed: 223.634 s <<< FAILURE! - in TestSuite
+com.mystore.testcases.IndexPageTest.verifyLogo  Time elapsed: 0.033 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.mystore.testcases.IndexPageTest.verifyLogo(IndexPageTest.java:43)
+
+com.mystore.testcases.SearchResultPageTest.productAvailabilityTest  Time elapsed: 0.04 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"*[name='submit_search']"}
+  (Session info: chrome=104.0.5112.81)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LMC-LT-115', ip: '192.168.0.143', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\SUPRAJ~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55860}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: abf460bdc97c4525753d160ebd4bf3d2
+*** Element info: {Using=name, value=submit_search}
+	at com.mystore.testcases.SearchResultPageTest.productAvailabilityTest(SearchResultPageTest.java:43)
+
+com.mystore.testcases.HomePageTest.orderHistoryandDetailsTest  Time elapsed: 0.024 s  <<< FAILURE!
+org.openqa.selenium.json.JsonException: 
+java.lang.reflect.InvocationTargetException
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LMC-LT-115', ip: '192.168.0.143', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1'
+Driver info: driver.version: RemoteWebDriver
+	at com.mystore.testcases.HomePageTest.orderHistoryandDetailsTest(HomePageTest.java:56)
+Caused by: java.lang.reflect.InvocationTargetException
+	at com.mystore.testcases.HomePageTest.orderHistoryandDetailsTest(HomePageTest.java:56)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='login']"}
+  (Session info: chrome=104.0.5112.81)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LMC-LT-115', ip: '192.168.0.143', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\SUPRAJ~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55879}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ff2203878094b360a06b7aac58d36389
+*** Element info: {Using=xpath, value=//a[@class='login']}
+	at com.mystore.testcases.HomePageTest.orderHistoryandDetailsTest(HomePageTest.java:56)
+
+com.mystore.testcases.HomePageTest.wishListTest  Time elapsed: 35.353 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.mystore.testcases.HomePageTest.wishListTest(HomePageTest.java:48)
+
+com.mystore.testcases.OrderPageTest.verifyTotalPrice  Time elapsed: 0.044 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"*[name='submit_search']"}
+  (Session info: chrome=104.0.5112.81)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LMC-LT-115', ip: '192.168.0.143', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\SUPRAJ~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55936}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 58307da74877047abc491572b7bcd5ee
+*** Element info: {Using=name, value=submit_search}
+	at com.mystore.testcases.OrderPageTest.verifyTotalPrice(OrderPageTest.java:47)
+
+com.mystore.testcases.EndtToEndTest.endToEndTest  Time elapsed: 0.046 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"*[name='submit_search']"}
+  (Session info: chrome=104.0.5112.81)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LMC-LT-115', ip: '192.168.0.143', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\SUPRAJ~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55955}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c30f9c3b12af3b2b6c20f5b7bfb0ddc1
+*** Element info: {Using=name, value=submit_search}
+	at com.mystore.testcases.EndtToEndTest.endToEndTest(EndtToEndTest.java:61)
+
+com.mystore.testcases.AddToCartPageTest.addToCartTest  Time elapsed: 0.815 s  <<< FAILURE!
+org.openqa.selenium.json.JsonException: 
+java.lang.reflect.InvocationTargetException
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LMC-LT-115', ip: '192.168.0.143', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1'
+Driver info: driver.version: RemoteWebDriver
+	at com.mystore.testcases.AddToCartPageTest.addToCartTest(AddToCartPageTest.java:49)
+Caused by: java.lang.reflect.InvocationTargetException
+	at com.mystore.testcases.AddToCartPageTest.addToCartTest(AddToCartPageTest.java:49)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="center_column"]//img"}
+  (Session info: chrome=104.0.5112.81)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LMC-LT-115', ip: '192.168.0.143', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\SUPRAJ~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55973}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9b0a88781524af6e3932ba62e058b1ac
+*** Element info: {Using=xpath, value=//*[@id="center_column"]//img}
+	at com.mystore.testcases.AddToCartPageTest.addToCartTest(AddToCartPageTest.java:49)
+
